@@ -1,0 +1,8 @@
+Deepak's research statement:
+
+	A significant shortcoming in the security literature today
+	is methods to model and prove security properties. Paul David Swasey's
+	initial research work will focus on this direction; in particular,
+	it will combine techniques from programming language theory,
+	proof systems and formal verification to design a framework
+	for modeling and proving security properties.
