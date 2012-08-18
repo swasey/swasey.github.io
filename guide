@@ -1,3 +1,6 @@
+git push
+ssh contact.mpi-sws.org 'cd public_html && git pull'
+
 Deepak's research statement:
 
 	A significant shortcoming in the security literature today
