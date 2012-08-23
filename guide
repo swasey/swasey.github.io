@@ -1,5 +1,4 @@
 git push
-ssh contact.mpi-sws.org 'cd public_html && git pull'
 
 Deepak's research statement:
 
@@ -9,3 +8,15 @@ Deepak's research statement:
 	it will combine techniques from programming language theory,
 	proof systems and formal verification to design a framework
 	for modeling and proving security properties.
+
+A "promise" I struck from index.html:
+
+<!--
+<P>
+In my initial research, I will focus on techniques for compositional
+reasoning about secure systems. One of my concrete goals is to develop
+a higher-order version of Garg et al's framework for modeling and
+proving security properties in the presence of
+<A HREF="http://www.cylab.cmu.edu/research/techreports/2010/tr_cylab10004.html" target="_blank">interface-confined adversaries</A>.
+</P>
+-->
