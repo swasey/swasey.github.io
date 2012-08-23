@@ -1,0 +1,19 @@
+A number of research systems have demonstrated the benefits of
+accompanying each request with a machine-checkable proof that the
+request complies with access-control policy --- a technique called
+proof-carrying authorization. Numerous authorization logics have been
+proposed as vehicles by which these proofs can be expressed and
+checked. A challenge in building such systems is how to allow
+delegation between institutions that use different authorization
+logics. Instead of trying to develop the authorization logic that all
+institutions should use, we propose a framework for interfacing
+different, mutually incompatible authorization logics. Our framework
+provides a very small set of primitives that defines an interface for
+communication between different logics without imposing any
+fundamental constraints on their design or nature. We illustrate by
+example that a variety of different logics can communicate over this
+interface, and show formally that supporting the interface does not
+impinge on the integrity of each individual logic. We also describe an
+architecture for constructing authorization proofs that contain
+components from different logics and report on the performance of a
+prototype proof checker.

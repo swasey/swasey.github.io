@@ -1,0 +1,10 @@
+We present an extension to Standard ML, called SMLSC, to support
+separate compilation. The system gives meaning to individual program
+fragments, called units. Units may depend on one another in a way
+specified by the programmer. A dependency may be mediated by an
+interface (the type of a unit); if so, the units can be compiled
+separately. Otherwise, they must be compiled in sequence. We also
+propose a methodology for programming in SMLSC that reflects code
+development practice and avoids syntactic repetition of interfaces.
+The language is given a formal semantics, and we argue that this
+semantics is implementable in a variety of compilers.

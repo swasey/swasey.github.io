@@ -1,0 +1,11 @@
+This is a proposal for an extension to the Standard ML programming
+language to support separate compilation. The extension allows the
+programmer to write a program broken into multiple fragments in a way
+that would be compatible between different implementations. It also
+allows for the separate compilation of these fragments, for
+incremental recompilation strategies such as cut-off recompilation,
+and for a range of implementation strategies including whole-program
+compilation. The semantics of separate compilation is defined
+independent of the underlying semantic framework for Standard ML and
+is realized in two forms corresponding to The Definition of Standard
+ML and The Typed Semantics of Standard ML.

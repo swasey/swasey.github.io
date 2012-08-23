@@ -1,0 +1,13 @@
+Several works have recently shown that Android's security architecture
+cannot prevent many undesired behaviors that compromise the integrity
+of applications and the privacy of their data. This paper makes two
+main contributions to the body of research on Android security: first,
+it develops a formal framework for analyzing Android-style security
+mechanisms; and, second, it describes the design and implementation of
+Sorbet, an enforcement system that enables developers to use
+permissions to specify secrecy and integrity policies. Our formal
+framework is composed of an abstract model with several specific
+instantiations. The model enables us to formally define some desired
+security properties, which we can prove hold on Sorbet but not on
+Android. We implement Sorbet on top of Android 2.3.7, test it on a
+Nexus S phone, and demonstrate its usefulness through a case study.
