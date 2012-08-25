@@ -1,5 +1,27 @@
 git push
 
+Look at
+
+	http://cl-informatik.uibk.ac.at/users/cek/publications.php
+
+	1. The layout with links on the left and extra space between
+	publications looks nice. Consider using CSS.
+	
+	2. The links "Publisher's site" and the note
+	"All the PDFs provided above are preprint" seems much more
+	friendly than Springer's suggestion.
+
+	3. Avoid typing bibliographic details twice (later, three times):
+	
+	• consider building a master bibtex file listing my publications,
+	my notes on them, etc.
+	• generate my CV's publications sections from it
+	• generate my paper's web page from it
+	• generate a bibtex.html from it along the lines of Cezary's
+
+	This involves either using the new bibtex thing or something
+	along the lines of what I did for Fox Project publications.
+
 Deepak's research statement:
 
 	A significant shortcoming in the security literature today
@@ -10,7 +32,7 @@ Deepak's research statement:
 	for modeling and proving security properties.
 
 A "promise" I struck from index.html:
-	
+
 	<!--
 	<P>
 	In my initial research, I will focus on techniques for compositional
