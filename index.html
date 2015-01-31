@@ -5,21 +5,27 @@
 <TITLE>David Swasey</TITLE>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <META name="description" content="David Swasey's Home Page">
-<META name="keywords" content="Computer Science, Programming Languages,
-Type Theory, Proof Theory, Security">
+<META name="keywords" content="Computer Science, Programming Languages, Security">
+<LINK rel="stylesheet" href="swasey.css" type="text/css">
 </HEAD>
 <BODY>
 
-<H1>David Swasey</H1>
+<DIV class="right">
+	<TABLE >
+	<TR><TD style="vertical-align: top">Post:</TD><TD>&nbsp;&nbsp;</TD><TD>MPI-SWS<BR>Campus E1 4<BR>D-66123 Saarbrücken<BR>Germany</TD></TR>
+	<TR><TD>Office:</TD><TD></TD><TD>Building E1 5, Room 305</TD></TR>
+	<TR><TD>Phone:</TD><TD></TD><TD>+49 681 9303-9210</TD></TR>
+	</TABLE>
+</DIV>
 
-<P>Ph.D.&nbsp;student, <A href="http://www.mpi-sws.org/" target="_blank">MPI-SWS</A></P>
-
-<P>→ <B>Home</B>
-→ <A href="papers.html">Papers</A>
-→ <A href="contact.html">Contact</A>
+<P>
+David Swasey<BR>
+Ph.D.&nbsp;student<BR>
+<A href="http://www.mpi-sws.org/" target="_blank">MPI-SWS</A> &amp; <A target="_blank" href="http://www.cs.uni-saarland.de/">Saarland University</A><BR>
+<IMG src="email.gif">
 </P>
 
-<HR>
+<HR class="clear">
 
 <P>
 I am a Ph.D.&nbsp;student studying Computer Science at the Max Planck Institute for Software Systems&nbsp;(MPI-SWS), co-advised by <A HREF="http://www.mpi-sws.org/~dreyer/" target="_blank">Derek Dreyer</A> and <A HREF="http://www.mpi-sws.org/~dg/" target="_blank">Deepak Garg.</A>
@@ -31,7 +37,7 @@ at Carnegie Mellon University under the direction of
 Please see my <A href="swaseycv.pdf">CV</A> for the full story.
 </P>
 
-<H2>Research Interests</H2>
+<H1>Research Interests</H1>
 
 <UL>
 <LI>Programming language design and implementation, type systems, and type theory.
@@ -44,6 +50,64 @@ Please see my <A href="swaseycv.pdf">CV</A> for the full story.
 <P>
 I am interested in Kripke models and logics for message-passing concurrency; for example, in the design of concurrency logics that support compositional verification of security protocols.
 </P>
+
+<H1>Publications</H1>
+
+<UL class="papers">
+
+	<LI class="paper"><A name="iris" href="papers/iris/iris-popl15.pdf" class="quiet"><B>Iris: Monoids and invariants as an orthogonal basis for concurrent reasoning.</B></A><BR>
+	Ralf Jung, David Swasey, Filip Sieczkowski, Kasper Svendsen, Aaron Turon, Lars Birkedal, and Derek Dreyer.<BR>
+	In <EM>POPL 2015: 42nd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages,</EM> pages 637–650, Mumbai, Italy, January 2015.
+	<UL>
+	<LI>
+		<A href="papers/iris/iris-popl15.pdf">article</A> (<A href="papers/iris/abstract.txt">abstract.txt</A>),
+		<A target="_blank" href="http://dx.doi.org/10.1145/2676726.2676980">publisher's site</A>
+	<LI><A href="papers/iris/iris-appendix.pdf">technical appendix</A>,
+	<LI>
+		<A href="papers/iris/iris-20141024.tgz">Coq development</A> (<A href="papers/iris/README.txt">readme.txt</A>),
+		<A target="_blank" href="http://plv.mpi-sws.org/iris/">project site</A>
+	</UL>
+
+	<LI class="paper"><A name="androidsec" href="papers/androidsec/sorbet-esorics12.pdf" class="quiet"><B>Modeling and enhancing Android's permission system.</B></A><BR>
+	Elli Fragkaki, Lujo Bauer, Limin Jia, and David Swasey.<BR>
+	<!-- http://www.iit.cnr.it/esorics2012/ -->
+	In <EM>Computer Security — ESORICS&nbsp;2012 — 17th European Symposium on Research in Computer Security,</EM> pages 1–18, Pisa, Italy, September 2012. Springer LNCS&nbsp;7459.
+	<UL>
+	<LI>
+		<A href="papers/androidsec/sorbet-esorics12.pdf">article</A> (<A href="papers/androidsec/abstract.txt">abstract.txt</A>),
+		<A target="_blank" href="http://dx.doi.org/10.1007/978-3-642-33167-1_1">publisher's site</A>
+	<LI><A href="papers/androidsec/CMU-CyLab-11-020.pdf">technical report</A>: <EM>Carnegie Mellon University CyLab Technical Report CMU-CyLab-11-020,</EM> April 2012.
+	</UL>
+
+	<LI class="paper"><A name="xdomain" href="papers/xdomain/xdomain-sacmat09.pdf" class="quiet"><B>xDomain: Cross-border proofs of access.</B></A><BR>
+	Lujo Bauer, Limin Jia, Michael&nbsp;K. Reiter, and David Swasey.<BR>
+	<!-- http://www.sacmat.org/2009/ -->
+	In <EM>SACMAT&nbsp;'09: Proceedings of the 14th ACM Symposium on Access Control Models and Technologies,</EM> pages 43–52, Stresa, Italy, June 2009.
+	<UL>
+	<LI>
+		<A href="papers/xdomain/xdomain-sacmat09.pdf">article</A> (<A href="papers/xdomain/abstract.txt">abstract.txt</A>),
+		<A target="_blank" href="http://dx.doi.org/10.1145/1542207.1542216">publisher's site</A>
+	<LI><A href="papers/xdomain/CMU-CyLab-09-005.pdf">technical report</A>: <EM>Carnegie Mellon University CyLab Technical Report CMU-CyLab-09-005,</EM> March 2009.
+	</UL>
+
+	<LI class="paper"><A name="smlsc" href="papers/smlsc/smlsc-ml06.pdf" class="quiet"><B>A separate compilation extension to Standard&nbsp;ML.</B></A><BR>
+	David Swasey, Tom&nbsp;Murphy VII, Karl Crary, and Robert Harper.<BR>
+	<!-- http://gallium.inria.fr/ml2006/ -->
+	In <EM>ML&nbsp;'06: Proceedings of the 2006 ACM SIGPLAN Workshop on ML,</EM> pages 32–42, Portland, Oregon, USA, September 2006.
+	<UL>
+	<LI>
+		<A href="papers/smlsc/smlsc-ml06.pdf">article</A> (<A href="papers/smlsc/abstract.txt">abstract.txt</A>),
+		<A target="_blank" href="http://dx.doi.org/10.1145/1159876.1159883">publisher's site</A>
+
+	<LI><A href="papers/smlsc/CMU-CS-06-104R.pdf">technical report</A>: <EM>Carnegie Mellon University School of Computer Science Technical Report CMU-CS-06-104R,</EM> September 2006.<BR>
+	This is a significantly expanded version of our ML&nbsp;'06 paper.
+
+	<LI><A href="papers/smlsc/CMU-CS-06-104.pdf">preliminary TR</A> (<A href="papers/smlsc/draft_tr_abstract.txt">abstract.txt</A>): <EM>Carnegie Mellon University School of Computer Science Technical Report CMU-CS-06-104,</EM> January 2006.<BR>
+	Superseded by our ML&nbsp;'06 paper.<BR>
+	</UL>
+</UL>
+
+<HR>
 
 </BODY>
 </HTML>

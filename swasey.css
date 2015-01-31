@@ -1,0 +1,61 @@
+/*
+	Debugging.
+IMG, TABLE, TD, TR, P, H1, H2, DIV {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+*/
+/*
+	Colors
+*/
+BODY {
+	background-color: #FFFFEA;
+	color: #008080;
+}
+A:link { color: #4369A2; }
+A:visited, A:hover, A:active,
+H1 { color: #603096; }	/* purple */
+A:link.quiet, A:visited.quiet {
+	color: #008080;
+	text-decoration: none;
+}
+A:hover.quiet, A:active.quiet {
+	color: #603096;
+	text-decoration: none;
+}
+/*
+	Fonts
+*/
+BODY {
+	font-family: Comic Sans MS, sans-serif;
+}
+/* body stuff */
+H1 {
+	font-size: large;
+	font-weight: bold;
+}
+UL.papers {
+	list-style: none;
+	padding-left: 0pt;
+}
+LI.paper {
+	margin-top: 1ex;
+}
+/*
+	Layout
+*/
+BODY {
+	margin: 2ex;
+	margin-bottom: 0ex;
+}
+/* body stuff */
+DIV.left {
+	float: left;
+	margin-right: 1ex;
+}
+DIV.right {
+	float: right;
+	margin-left: 1ex;
+}
+HR.clear { clear: both; }
