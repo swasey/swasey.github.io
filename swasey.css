@@ -24,13 +24,14 @@ A:hover.quiet, A:active.quiet {
 	color: #603096;
 	text-decoration: none;
 }
+
 /*
 	Fonts
 */
 BODY {
-	/* font-family: Comic Sans MS, sans-serif; */
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Fira Sans", "Lucida Sans Unicode", sans-serif;
 }
+
 /* body stuff */
 H1 {
 	/* font-family: "Times New Roman", Times, serif; */
