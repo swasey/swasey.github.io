@@ -64,3 +64,8 @@ DIV.right {
 	margin-left: 1ex;
 }
 HR.clear { clear: both; }
+P.abstract {
+	font-size: 80%;
+	margin-left: 2em;
+	margin-right: 1em;
+}
