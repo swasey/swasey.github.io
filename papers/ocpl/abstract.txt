@@ -14,7 +14,7 @@ safety*. Programs that export only properly wrapped values to their
 environment can be proven robustly safe, meaning that their untrusted
 environment cannot violate their internal invariants. We use OCPL to
 give the first general, compositional, and machine-checked specs for
-several commonly-used OCPs—including the *dynamic sealing*,
-*membrane*, and *caretaker* patterns—which we then use to verify
+several commonly-used OCPs---including the *dynamic sealing*,
+*membrane*, and *caretaker* patterns---which we then use to verify
 robust safety for representative client code. All our results are
 fully mechanized in the Coq proof assistant.
