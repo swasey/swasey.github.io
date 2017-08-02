@@ -1,3 +1,4 @@
+/* Attribution: Based in part on the Firefox reader. */
 /*
 	Debugging.
 IMG, TABLE, TD, TR, P, H1, H2, DIV {
@@ -6,66 +7,33 @@ IMG, TABLE, TD, TR, P, H1, H2, DIV {
 	border-color: black;
 }
 */
-/*
-	Colors
-*/
 BODY {
-	background-color: #FFFFEA;
-	color: #008080;
+	font-family: "Fira Sans", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.6em;
+	background-color: #FFFFFF;
+	color: #333333;
+	margin: 0 auto;
+	max-width: 30em;
 }
-A:link { color: #4369A2; }
-A:visited, A:hover, A:active,
-H1 { color: #603096; }	/* purple */
-A:link.quiet, A:visited.quiet {
-	color: #008080;
-	text-decoration: none;
+H1, H2 {
+	font-size: 1.6em;
+	line-height: 1.25em;
+	margin: 30px 0;
+	padding: 0;
 }
-A:hover.quiet, A:active.quiet {
-	color: #603096;
-	text-decoration: none;
-}
-
-/*
-	Fonts
-*/
-BODY {
-	font-family: "Fira Sans", "Lucida Sans Unicode", sans-serif;
-}
-
-/* body stuff */
-H1 {
-	/* font-family: "Times New Roman", Times, serif; */
-	font-size: large;
-	/* font-size: medium; */
-	font-weight: bold;
-	font-style: italic;
+H2 {
+	font-size: 1.25em;
+	margin: 10px 0;
 }
 UL.papers {
 	list-style: none;
 	padding-left: 0pt;
 }
 LI.paper {
-	margin-top: 1ex;
+	margin-top: 2ex;
 }
-/*
-	Layout
-*/
-BODY {
-	margin: 2ex;
-	margin-bottom: 0ex;
-}
-/* body stuff */
-DIV.left {
-	float: left;
-	margin-right: 1ex;
-}
-DIV.right {
-	float: right;
-	margin-left: 1ex;
-}
-HR.clear { clear: both; }
-P.abstract {
-	font-size: 80%;
-	margin-left: 2em;
-	margin-right: 1em;
+A:hover.quiet, A:active.quiet, A:link.quiet, A:visited.quiet {
+	color: #333333;
+	text-decoration: none;
 }
