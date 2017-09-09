@@ -14,7 +14,7 @@ BODY {
 	background-color: #FFFFFF;
 	color: #333333;
 	margin: 0 auto;
-	max-width: 30em;
+	max-width: 40em;	/* 30em is too narrow */
 }
 H1, H2 {
 	line-height: 1.25em;

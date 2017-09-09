@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
-	"http://www.w3.org/TR/REC-html40/loose.dtd">
+<!DOCTYPE HTML>
 <HTML>
 <HEAD>
 <TITLE>David Swasey</TITLE>
@@ -57,6 +56,32 @@ I am interested in Kripke models and logics for concurrency and security; for ex
 		<A href="papers/ocpl/ocpl-20170705.tgz">Coq development</A>,
 		<A href="papers/ocpl/ocpl-vm-20170705.ova">VM image</A>&nbsp;(an <A href="https://en.wikipedia.org/wiki/Open_Virtualization_Format">Open Virtualization Format</A> archive with CoqIDE and our Coq development)
 	</UL>
+	<details>
+		<summary>Abstract</summary>
+		<blockquote>
+		In scenarios such as web programming, where code is linked together
+		from multiple sources, <EM>object capability patterns</EM>&nbsp;(OCPs)
+		provide an essential safeguard, enabling programmers to protect the
+		private state of their objects from corruption by unknown and
+		untrusted code.  However, the benefits of OCPs in terms of program
+		verification have never been properly formalized.  In this paper,
+		building on the recently developed Iris framework for concurrent
+		separation logic, we develop OCPL, the first program logic for
+		compositionally specifying and verifying OCPs in a language with
+		closures, mutable state, and concurrency.  The key idea of OCPL is to
+		account for the interface between verified and untrusted code by
+		adopting a well-known idea from the literature on security protocol
+		verification, namely <EM>robust safety</EM>.  Programs that export only
+		properly wrapped values to their environment can be proven robustly
+		safe, meaning that their untrusted environment cannot violate their
+		internal invariants.  We use OCPL to give the first general,
+		compositional, and machine-checked specs for several commonly-used
+		<nobr>OCPs—including</nobr> the <EM>dynamic sealing,</EM> <EM>membrane,</EM> and
+		<EM>caretaker</EM> <nobr>patterns—which</nobr> we then use to verify robust safety
+		for representative client code.  All our results are fully mechanized
+		in the Coq proof assistant.
+		</blockquote>
+	</details>
 
 	<LI class="paper"><A name="iris" href="papers/iris/iris-popl15.pdf" class="paper"><B>Iris: Monoids and invariants as an orthogonal basis for concurrent reasoning.</B></A><BR>
 	Ralf Jung, David Swasey, Filip Sieczkowski, Kasper Svendsen, Aaron Turon, Lars Birkedal, and Derek Dreyer.<BR>
@@ -75,6 +100,21 @@ I am interested in Kripke models and logics for concurrency and security; for ex
 		<A target="_blank" href="http://plv.mpi-sws.org/iris/">project site</A>
 -->
 	</UL>
+	<details>
+		<summary>Abstract</summary>
+		<blockquote>
+		We present Iris, a concurrent separation logic with a simple premise:
+		<EM>monoids and invariants are all you need</EM>.  Partial commutative
+		monoids enable us to <nobr>express—and</nobr> invariants enable us to
+		<nobr>enforce—user</nobr>-defined <EM>protocols</EM> on shared state, which are at
+		the conceptual core of most recent program logics for concurrency.
+		Furthermore, through a novel extension of the concept of a <EM>view
+		shift,</EM> Iris supports the encoding of <EM>logically atomic
+		specifications,</EM> <EM>i.e.,</EM> Hoare-style specs that permit the client of an
+		operation to treat the operation essentially as if it were atomic,
+		even if it is not.
+		</blockquote>
+	</details>
 
 	<LI class="paper"><A name="androidsec" href="papers/androidsec/sorbet-esorics12.pdf" class="paper"><B>Modeling and enhancing Android's permission system.</B></A><BR>
 	Elli Fragkaki, Lujo Bauer, Limin Jia, and David Swasey.<BR>
@@ -86,6 +126,24 @@ I am interested in Kripke models and logics for concurrency and security; for ex
 		<A target="_blank" href="http://dx.doi.org/10.1007/978-3-642-33167-1_1">publisher's site</A>
 	<LI><A href="papers/androidsec/CMU-CyLab-11-020.pdf">technical report</A>: <EM>Carnegie Mellon University CyLab Technical Report CMU-CyLab-11-020,</EM> April 2012.
 	</UL>
+	<details>
+		<summary>Abstract</summary>
+		<blockquote>
+		Several works have recently shown that Android's security architecture
+		cannot prevent many undesired behaviors that compromise the integrity
+		of applications and the privacy of their data. This paper makes two
+		main contributions to the body of research on Android security: first,
+		it develops a formal framework for analyzing Android-style security
+		mechanisms; and, second, it describes the design and implementation of
+		Sorbet, an enforcement system that enables developers to use
+		permissions to specify secrecy and integrity policies. Our formal
+		framework is composed of an abstract model with several specific
+		instantiations. The model enables us to formally define some desired
+		security properties, which we can prove hold on Sorbet but not on
+		Android. We implement Sorbet on top of Android&nbsp;2.3.7, test it on a
+		Nexus&nbsp;S phone, and demonstrate its usefulness through a case study.
+		</blockquote>
+	</details>
 
 	<LI class="paper"><A name="xdomain" href="papers/xdomain/xdomain-sacmat09.pdf" class="paper"><B>xDomain: Cross-border proofs of access.</B></A><BR>
 	Lujo Bauer, Limin Jia, Michael&nbsp;K. Reiter, and David Swasey.<BR>
@@ -97,6 +155,30 @@ I am interested in Kripke models and logics for concurrency and security; for ex
 		<A target="_blank" href="http://dx.doi.org/10.1145/1542207.1542216">publisher's site</A>
 	<LI><A href="papers/xdomain/CMU-CyLab-09-005.pdf">technical report</A>: <EM>Carnegie Mellon University CyLab Technical Report CMU-CyLab-09-005,</EM> March 2009.
 	</UL>
+	<details>
+		<summary>Abstract</summary>
+		<blockquote>
+		A number of research systems have demonstrated the benefits of
+		accompanying each request with a machine-checkable proof that the
+		request complies with access-control <nobr>policy—a</nobr> technique called
+		<EM>proof-carrying authorization</EM>. Numerous authorization logics have been
+		proposed as vehicles by which these proofs can be expressed and
+		checked. A challenge in building such systems is how to allow
+		delegation between institutions that use different authorization
+		logics. Instead of trying to develop <EM>the</EM> authorization logic that all
+		institutions should use, we propose a framework for interfacing
+		different, mutually incompatible authorization logics. Our framework
+		provides a very small set of primitives that defines an interface for
+		communication between different logics without imposing any
+		fundamental constraints on their design or nature. We illustrate by
+		example that a variety of different logics can communicate over this
+		interface, and show formally that supporting the interface does not
+		impinge on the integrity of each individual logic. We also describe an
+		architecture for constructing authorization proofs that contain
+		components from different logics and report on the performance of a
+		prototype proof checker.
+		</blockquote>
+	</details>
 
 	<LI class="paper"><A name="smlsc" href="papers/smlsc/smlsc-ml06.pdf" class="paper"><B>A separate compilation extension to Standard&nbsp;ML.</B></A><BR>
 	David Swasey, Tom&nbsp;Murphy VII, Karl Crary, and Robert Harper.<BR>
@@ -113,6 +195,22 @@ I am interested in Kripke models and logics for concurrency and security; for ex
 	<LI><A href="papers/smlsc/CMU-CS-06-104.pdf">preliminary TR</A>: <EM>Carnegie Mellon University School of Computer Science Technical Report CMU-CS-06-104,</EM> January 2006.<BR>
 	Superseded by our ML&nbsp;'06 paper.<BR>
 	</UL>
+	<details>
+		<summary>Abstract</summary>
+		<blockquote>
+		We present an extension to Standard ML, called SMLSC, to support
+		separate compilation. The system gives meaning to individual program
+		fragments, called units. Units may depend on one another in a way
+		specified by the programmer. A dependency may be mediated by an
+		interface (the type of a unit); if so, the units can be compiled
+		separately. Otherwise, they must be compiled in sequence. We also
+		propose a methodology for programming in SMLSC that reflects code
+		development practice and avoids syntactic repetition of interfaces.
+		The language is given a formal semantics, and we argue that this
+		semantics is implementable in a variety of compilers.
+		</blockquote>
+	</details>
+
 </UL>
 
 <HR>
