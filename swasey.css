@@ -39,3 +39,6 @@ A:hover.paper, A:active.paper, A:link.paper, A:visited.paper {
 	color: #333333;
 	text-decoration: none;
 }
+SPAN.award {
+	color:#CA2C92;
+}
